@@ -14,13 +14,14 @@ java {
 }
 
 repositories {
-    mavenCentral() // Garante que o repositório Maven está configurado corretamente
+    mavenCentral()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'mysql:mysql-connector-java:8.0.33' // Driver MySQL corrigido
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'org.flywaydb:flyway-core'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
